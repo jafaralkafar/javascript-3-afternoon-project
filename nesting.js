@@ -121,7 +121,9 @@ var cat = {
 //Code Here
 var grumpyActivity;
 var fluffy2ndFriend;
-
+cat.forEach(function(friend) {
+  if ()
+})
 
 
 ////////// PROBLEM 4 //////////
@@ -180,5 +182,21 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 */
 
 //Code Here
+function looper(arr) {
+  newArr = []
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      if (arr[i][j]% 2 === 0){
+        arr[i][j] = "even"
+        
+      } else {
+        arr[i][j] = "odd"
+        
+      }
+    }
+  }
+  return arr
+}
 
+looper(numsArr)
 
